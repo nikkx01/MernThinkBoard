@@ -6,14 +6,15 @@ import NoteDetailPage from './pages/NoteDetailPage';
 import toast from 'react-hot-toast';
 
 const App = () => {
-  return <div>
-    <button onClick={() => toast.success("congrats")}>Click me</button>
-    <Routes>
+  return (
+    <div data-theme="forest">
+      <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/create' element={<CreatePage />} />
         <Route path='/note/:id' element={<NoteDetailPage />} /> 
     </Routes>
     </div>
+  );
 };
 
 export default App;
