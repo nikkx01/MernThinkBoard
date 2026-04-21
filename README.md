@@ -7,9 +7,6 @@ ThinkBoard allows users to create, organize, and manage notes efficiently with a
 
 ## 🚀 Features
 
-- 🔐 **User Authentication**  
-  Secure login and signup using JWT with protected routes  
-
 - 📝 **Notes Management**  
   Create, update, and delete notes  
 
@@ -38,10 +35,28 @@ ThinkBoard allows users to create, organize, and manage notes efficiently with a
 ### Database
 - MongoDB Atlas  
 
-### Tools
-- JWT Authentication  
+### Tools  
 - Git & GitHub  
 
 ---
 
-## 📁 Project Structure
+##🧪 .env Setup
+
+Backend (/backend)
+MONGO_URI=<your_mongo_uri>
+
+UPSTASH_REDIS_REST_URL=<your_redis_rest_url>
+UPSTASH_REDIS_REST_TOKEN=<your_redis_rest_token>
+
+NODE_ENV=development
+
+##🔧 Run the Backend
+
+cd backend
+npm install
+npm run dev
+
+##💻 Run the Frontend
+cd frontend
+npm install
+npm run dev
